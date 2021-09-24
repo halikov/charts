@@ -4,49 +4,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts / IBM Plex Sans font 500 600 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&display=swap" rel="stylesheet"> 
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles/style.css">
   <title>Charts</title>
 </head>
 <body>
   <div class="wrapper">
+
+    <!-- first card / recycled -->
     <div class="card">
       <div class="card__inner">
         <div class="card__top">
           <p class="card__name">Recycled</p>
-          <button class="dropdown" aria-label="dropdown">
-            <span aria-label="menu-dot"></span>
+          <button class="btn dropdown" aria-label="dropdown button">
+            <span class="dropdown__dot" aria-label="menu-dot"></span>
           </button>
         </div>
         <div class="card__content">
           <div class="chart">
-            <div class="chart__img">
-              <svg xmlns="http://www.w3.org/2000/svg" width="162" height="163" fill="none" viewBox="0 0 162 163">
+            <svg class="chart__img" xmlns="http://www.w3.org/2000/svg" width="162" height="163" fill="none" viewBox="0 0 162 163">
                 <path stroke="#FDC841" stroke-linecap="round" stroke-width="17" d="M124 23a72.4 72.4 0 0 1 29.5 58.38 72.19 72.19 0 0 1-8.19 33.5A72.72 72.72 0 0 1 104 150.15"/>
                 <path stroke="#FD8541" stroke-linecap="round" stroke-width="17" d="M83 9c7.67 0 15.06 1.2 22 3.4"/>
                 <path stroke="#E92E66" stroke-linecap="round" stroke-width="17" d="M81.5 154A72.26 72.26 0 0 1 31 133.52"/>
                 <path stroke="#0F1730" stroke-linecap="round" stroke-width="17" d="M18.27 117A72.53 72.53 0 0 1 62.5 11.52"/>
-              </svg>
+            </svg>
+            <div class="chart__sum">
               <p class="chart__total">Total</p>
               <p class="chart__count">47.1K</p>
             </div>
-            <div class="chart__details">
-              <div class="chart__legend legend">
-                <span class="legend__text legend__text--color">Text</span>
-                <span class="legend__count">32%</span>
-              </div>
-              <div class="chart__legend legend">
-                <span class="legend__text legend__text--color">Images</span>
-                <span class="legend__count">25%</span>
-              </div>
-              <div class="chart__legend legend">
-                <span class="legend__text legend__text--color">Documents</span>
-                <span class="legend__count">22%</span>
-              </div>
-              <div class="chart__legend legend">
-                <span class="legend__text legend__text--color">Videos</span>
-                <span class="legend__count">11%</span>
-              </div>
+          </div>
+          <div class="chart__details">
+            <div class="chart__legend legend">
+              <span class="legend__name legend__name--text">Text</span>
+              <span class="legend__count">32%</span>
             </div>
+            <div class="chart__legend legend">
+              <span class="legend__name legend__name--images">Images</span>
+              <span class="legend__count">25%</span>
+            </div>
+            <div class="chart__legend legend">
+              <span class="legend__name legend__name--docs">Documents</span>
+              <span class="legend__count">22%</span>
+            </div>
+            <div class="chart__legend legend">
+              <span class="legend__name legend__name--videos">Videos</span>
+              <span class="legend__count">11%</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn report-link">Read full report</a>
+      </div>
+    </div>
+
+    <!-- second card / goals -->
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__top">
+          <p class="card__name">Goals</p>
+          <select class="btn select" aria-label="dropdown button">
+            <option class="select__option">This Week</option>
+            <option class="select__option">This Month</option>
+            <option class="select__option">This Year</option>
+          </select>
+        </div>
+        <div class="card__content">
+          <div class="chart">
+            
+            
           </div>
         </div>
       </div>
